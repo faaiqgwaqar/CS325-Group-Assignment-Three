@@ -24,14 +24,14 @@ int mergeSegments(struct dynArr *da, int start, int middle, int end){
   int j;
   int k;
   int count = 0;
-  int temp[end - start + 1];
+  int temp[da->size];
 
   i = start;
   j = middle;
   k = start;
 
   while(i <= (middle - 1) && j <= end){
-    if(da->data[i] < da->data[j]){
+    if(da->data[i] <= da->data[j]){
       temp[k] = da->data[i];
       k++;
       i++;

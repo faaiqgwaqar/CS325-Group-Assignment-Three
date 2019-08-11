@@ -36,7 +36,7 @@ void _dynArrDoubleCapacity(struct dynArr *da){
 void dynArrGenerator(struct dynArr *da){
   int i;
   int randomVar;
-  int arrCap = 5;
+  int arrCap = 10;
   int upper = 100;
   int lower = 1;
   srand(time(NULL));
